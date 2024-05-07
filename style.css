@@ -1,0 +1,77 @@
+body {
+    font-family: initial;
+    margin: 0;
+    padding: 0;
+    background-color: #4088e1;
+}
+.container {
+    width: 100%;
+    margin: auto;
+    background: #b5b3b3;
+    padding: 20px;
+}
+header {
+    background: #4088e1;
+    color: #fff;
+    padding: 20px 1;
+    text-align: center;
+    h1{
+        font-family: "Molle", cursive;
+        margin: 0 0 10px;
+    }
+    p{
+        font-family: cursive;
+    }
+    border-bottom: 5px solid #000000;
+    border-bottom: 5px solid #000000;
+    
+
+}
+section {
+    margin: 30px 0;
+    font-family: "Mystery Quest", system-ui;
+    p{
+        font-family: "Shadows Into Light", cursive;
+    }
+}
+.section-Laboral {
+    color: #4088e1;
+    li{
+        font-family: fantasy;
+    }
+    h2 {
+        font-family: "Shadows Into Light", cursive;
+
+    }
+
+}
+.section-Educacion {
+    margin: 1px;
+    color: #4088e1;
+    h2{
+        font-family: "Shadows Into Light", cursive;
+    }
+    li {
+        font-family: fantasy;
+    }
+}
+.section-Cursos {
+    margin: 1px;
+    color: #4088e1
+    
+    
+}
+.section-cualidades {
+    margin: 5px 0;
+    color: #4088e1;
+    h2{
+        font-family: "Shadows Into Light", cursive;
+    }
+}
+
+
+
+
+
+
+
