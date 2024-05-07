@@ -3,24 +3,27 @@ body {
     margin: 0;
     padding: 0;
     background-color: #4088e1;
-    border-bottom: 5px solid #000000;
     border-top: 5px solid #000000;
 
 }
 .container {
     width: 100%;
-    
+    font-family: cursive;
     background: #b5b3b3;
     padding: 10px;
+    li{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    font-size: 20px;
 }
 header {
     background: #4088e1;
-    color: #fff;
+    color: #faf8f8;
     padding: 20px 1;
     text-align: center;
     hr{
-        border-top: 5px solid #000000;
-        border-bottom: 5px solid #000000;
+        border-top: 4px solid #000000;
+        border-bottom: 4px solid #000000;
     }
     h1{
         font-family: "Molle", cursive;
@@ -29,8 +32,7 @@ header {
     p{
         font-family: cursive;
     }
-    border-bottom: 5px solid #000000;
-    border-top: 5px solid #000000;
+    
     
 
 }
@@ -74,6 +76,10 @@ section {
     h2{
         font-family: "Shadows Into Light", cursive;
     }
+}
+hr{
+    border-bottom: 4px solid #000000;
+    border-top: 4px solid #000000;
 }
 
 
