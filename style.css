@@ -3,18 +3,25 @@ body {
     margin: 0;
     padding: 0;
     background-color: #4088e1;
+    border-bottom: 5px solid #000000;
+    border-top: 5px solid #000000;
+
 }
 .container {
     width: 100%;
-    margin: auto;
+    
     background: #b5b3b3;
-    padding: 20px;
+    padding: 10px;
 }
 header {
     background: #4088e1;
     color: #fff;
     padding: 20px 1;
     text-align: center;
+    hr{
+        border-top: 5px solid #000000;
+        border-bottom: 5px solid #000000;
+    }
     h1{
         font-family: "Molle", cursive;
         margin: 0 0 10px;
@@ -23,7 +30,7 @@ header {
         font-family: cursive;
     }
     border-bottom: 5px solid #000000;
-    border-bottom: 5px solid #000000;
+    border-top: 5px solid #000000;
     
 
 }
