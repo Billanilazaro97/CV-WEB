@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #4088e1;
     border-top: 5px solid #000000;
+    background-image:url(/img/fondo.jpeg);
 
 }
 .container {
@@ -20,13 +21,12 @@ body {
 }
 header {
     background: #4088e1;
-    color: #faf8f8;
-    padding: 20px 1;
+    color: #322c2c;
+    
     text-align: center;
-    hr{
-        border-top: 4px solid #000000;
-        border-bottom: 4px solid #000000;
-    }
+    background-image: url(/img/ola.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     h1{
         font-family: "Molle", cursive;
         margin: 0 0 10px;
