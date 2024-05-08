@@ -22,7 +22,6 @@ body {
 header {
     background: #4088e1;
     color: #322c2c;
-    
     text-align: center;
     background-image: url(/img/ola.jpg);
     background-size: cover;
@@ -83,6 +82,15 @@ section {
 hr{
     border-bottom: 4px solid #000000;
     border-top: 4px solid #000000;
+}
+.section-Idiomas{
+    color: #4088e1;
+    h2{
+        font-family: "Shadows Into Light", cursive;
+    }
+    li{
+        font-family: fantasy;
+    }
 }
 
 
