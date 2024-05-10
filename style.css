@@ -14,13 +14,13 @@ body {
     font-family: cursive;
     background: #fcfafa;
     padding: 10px;
-    background-image: url(/img/fondo.jpeg);
+    
     font-size: 20px;
 }
 footer {
     background: #4088e1;
+    
     color: #453c3c;
-    background-image: url(/img/ola.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     h1{
@@ -87,6 +87,10 @@ section {
         font-family: fantasy;
     }
 }
+
+
+
+
 
 
 
