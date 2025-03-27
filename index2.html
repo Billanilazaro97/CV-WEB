@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="shortcut icon" href="img/candidato.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="loader" class="loader">Cargando...</div>
+    <div class="container">
+        <header class="header">
+            <div class="profile">
+                <img src="img/Yo2.jpg" alt="Mi foto" class="profile-img">
+                <h1 id="myname">Lázaro Martin Billani</h1>
+                <p class="profession">Estudiante de Tecnología de Programación</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#Datos-Personales">Datos Personales</a></li>
+                    <li><a href="#Experiencia-Laboral">Experiencia</a></li>
+                    <li><a href="#Educacion">Educación</a></li>
+                    <li><a href="#Cursos">Cursos</a></li>
+                    <li><a href="#Cualidades">Cualidades</a></li>
+                    <li><a href="#Idiomas">Idiomas</a></li>
+                    <li><a href="#MiUbicacion">Ubicación</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="Datos-Personales">
+            <h2>Datos Personales</h2>
+            <ul>
+                <li><strong>Fecha de nacimiento:</strong> 27/01/1997</li>
+                <li><strong>Lugar de nacimiento:</strong> Gral. LaMadrid</li>
+                <li><strong>Nacionalidad:</strong> Argentino</li>
+                <li><strong>Estado Civil:</strong> Soltero, sin hijos</li>
+            </ul>
+        </section>
+
+        <section id="Experiencia-Laboral"  class="fade-in">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>Ayudante en podas de árboles y aparcamiento</li>
+                <li>Carga de Camiones con animales</li>
+                <li>Ayudante de plomería</li>
+                <li>Conocimiento en Albañilería</li>
+                <button id="btnMore" onclick="toggleMore()">Ver más</button>
+                <div id="moreInfo" style="display: none;">
+                <li>Referencias: 
+                    <ul>
+                        <li>Martin Rios (2284-725119)</li>
+                        <li>Osvaldo Scioli (2284-653350)</li>
+                        <li>Pedro (2284-588316)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="Educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>Primario Completo: Escuela Nº7</li>
+                <li>Secundario Completo: Bachillerato con Orientación en Gestión y Administración - E.E.S.A Nº1</li>
+            </ul>
+        </section>
+
+        <section id="Cursos">
+            <h2>Cursos</h2>
+            <ul>
+                <li>Operador de Informática (CFL 401 Gral. LaMadrid)</li>
+                <li>Desarrollo Web (Puente Innova, Gral. LaMadrid)</li>
+                <li>Iniciación a la Programación (Puente Innova, Gral. LaMadrid)</li>
+                <li>Introducción al Trabajo (CFL 401 Gral. LaMadrid)</li>
+                <li>Habilidades para emprender (CFL 401 Gral. LaMadrid)</li>
+                <li>Bootcamp 2024 (Puente Innova, Gral. LaMadrid)</li>
+            </ul>
+        </section>
+
+        <section id="Cualidades">
+            <h2>Cualidades</h2>
+            <ul>
+                <li>Fuerte ética de trabajo y dedicación a los objetivos.</li>
+                <li>Capacidad para adaptarme rápidamente a nuevas situaciones.</li>
+                <li>Habilidades excepcionales de comunicación, tanto escritas como verbales.</li>
+            </ul>
+        </section>
+
+        <section id="Idiomas">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Español: Avanzado</li>
+                <li>Inglés: Básico</li>
+            </ul>
+        </section>
+
+        <section id="MiUbicacion">
+            <h2>Ubicación</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25408.452482158966!2d-61.26457835000001!3d-37.2463655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9594ca46f7be3da3%3A0x805662443adecc30!2sGral.%20La%20Madrid%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1715343887677!5m2!1ses-419!2sar" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/lazaro-billani"><img src="img/linkedin.jpg" alt="LinkedIn"></a>
+                <a href="https://github.com/Billanilazaro97"><img src="img/github.jpg" alt="GitHub"></a>
+                <a href="https://www.instagram.com/lazarobillani/"><img src="img/Instaaaa.jpg" alt="Instagram"></a>
+            </div>
+            <p>Contacto: <a href="tel:2284539788">2284-539788</a> | <a href="mailto:Lazarobillani77@gmail.com">Lazarobillani77@gmail.com</a></p>
+        </footer>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
