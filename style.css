@@ -162,7 +162,7 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5rem;
+    font-size: 5em;
     color: #4CAF50;
     z-index: 9999;
 }
