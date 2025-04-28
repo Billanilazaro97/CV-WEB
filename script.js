@@ -42,7 +42,7 @@ window.addEventListener('scroll', function() {
 
 
 
-// Efecto dinámico en el nombre
+
 const myName = document.getElementById("myname");
 
 myName.addEventListener("mouseenter", function() {
@@ -50,7 +50,7 @@ myName.addEventListener("mouseenter", function() {
 });
 
 myName.addEventListener("mouseleave", function() {
-    myName.style.color = ""; // Vuelve al color original del CSS
+    myName.style.color = ""; 
 });
 
 
