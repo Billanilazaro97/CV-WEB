@@ -54,3 +54,39 @@ myName.addEventListener("mouseleave", function() {
 });
 
 
+// 🌙 Modo Oscuro
+const toggle = document.getElementById('darkModeToggle');
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+
+// ✨ Animaciones al hacer scroll
+const faders = document.querySelectorAll('.fade-in');
+
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target); // Para que no se repita
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+// Mostrar/Ocultar experiencia adicional
+function toggleMore() {
+  const more = document.getElementById("moreInfo");
+  const button = document.getElementById("btnMore");
+  if (more.style.display === "none") {
+    more.style.display = "block";
+    button.textContent = "Ver menos";
+  } else {
+    more.style.display = "none";
+    button.textContent = "Ver más";
+  }
+}
