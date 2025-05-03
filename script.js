@@ -54,39 +54,48 @@ myName.addEventListener("mouseleave", function() {
 });
 
 
-// 🌙 Modo Oscuro
-const toggle = document.getElementById('darkModeToggle');
-toggle.addEventListener('click', () => {
-  document.body.classList.toggle('dark-mode');
-});
-
-// ✨ Animaciones al hacer scroll
-const faders = document.querySelectorAll('.fade-in');
-
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target); // Para que no se repita
-    }
+// Modo Oscuro y Observer se inicializan al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+  // 1. Modo Oscuro
+  const darkModeToggle = document.getElementById('darkModeToggle');
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode');
+  }
+  darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    const currentMode = document.body.classList.contains('dark-mode') ? 'enabled' : 'disabled';
+    localStorage.setItem('darkMode', currentMode);
   });
-}, {
-  threshold: 0.3
+
+  // 3. Animación Fade In
+  const fadeElements = document.querySelectorAll('.fade-in');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  fadeElements.forEach(el => observer.observe(el));
 });
 
-faders.forEach(fader => {
-  appearOnScroll.observe(fader);
-});
-
-// Mostrar/Ocultar experiencia adicional
+// 2. Función para mostrar/ocultar más información
 function toggleMore() {
-  const more = document.getElementById("moreInfo");
-  const button = document.getElementById("btnMore");
-  if (more.style.display === "none") {
-    more.style.display = "block";
-    button.textContent = "Ver menos";
+  const moreInfo = document.getElementById('moreInfo');
+  const btnMore = document.getElementById('btnMore');
+  
+  if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+    moreInfo.style.display = 'block';
+    btnMore.textContent = 'Ver menos';
   } else {
-    more.style.display = "none";
-    button.textContent = "Ver más";
+    moreInfo.style.display = 'none';
+    btnMore.textContent = 'Ver más';
   }
 }
+
+
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  loader.style.display = 'none';
+});
