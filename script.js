@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('darkMode', currentMode);
   });
 
-  // 3. Animación Fade In
+  //  Animación Fade In
   const fadeElements = document.querySelectorAll('.fade-in');
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
   fadeElements.forEach(el => observer.observe(el));
 });
 
-// 2. Función para mostrar/ocultar más información
+// Función para mostrar/ocultar más información
 function toggleMore() {
   const moreInfo = document.getElementById('moreInfo');
   const btnMore = document.getElementById('btnMore');
